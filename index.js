@@ -2,8 +2,7 @@
 'use strict';
 
 const express = require('express');
-const bodyParser = require('body-parser');
-const app = express().use(bodyParser.json()); // creates http server
+const app = express().use(express.json()); // creates http server
 const token = 'test'; // type here your verification token
 
 app.get('/', (req, res) => {
